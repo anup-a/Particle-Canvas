@@ -5,20 +5,7 @@ canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 //head.innerHTML = "Heading";
 var c = canvas.getContext('2d');
-//var list = ['a','b','c','d','e','f','1','2','3','4','5','6','7','8','9']
-//c.fillStyle = '#123abc'
-//c.fillRect(100,100,100,100);
-//
-//c.fillStyle = '#a1234f'
-//c.fillRect(400,400,100,100);
-//
-//c.beginPath();
-//c.moveTo(200,200);
-//c.lineTo(400,400);
-//c.lineTo(600,800);
-//c.strokeStyle = '#123aff';
-//c.stroke();
-//
+
 var mouse = {
     x: undefined,
     y: undefined
@@ -88,6 +75,7 @@ for (var i = 0; i < 800; i++) {
     var dx = (Math.random() - .5) * 3;
     var dy = (Math.random() - .5) * 3;
     var s = Math.floor(Math.random() * 4);
+    // To randomize colors you can use code written below and call function above
     //    var a, b, e, d;
     //    a = Math.floor(Math.random() * 255).toString();
     //    b = Math.floor(Math.random() * 255).toString();
@@ -107,7 +95,3 @@ function animate() {
 }
 
 animate();
-
-
-//var x = Math.random() * 1000;
-//head.innerHTML = x;
